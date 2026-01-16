@@ -12,7 +12,7 @@ public class Ex006 {
                 "Círculo: %.2f%n" +
                 "Trapézio: %.2f%n" +
                 "Quadrado: %.2f%n" +
-                "Retângulo: %.2f%n", (A*C/2), (3.14159*C*C), (A+B)/2, (B*B), (A*B));
+                "Retângulo: %.2f%n", (A*C/2), (3.14159*C*C), (A+B)/2*C, (B*B), (A*B));
 
         sc.close();
 
