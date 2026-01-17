@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Ex006 {
+public class Ex0106 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         float A, B, C;

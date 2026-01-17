@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 
-public class Ex002 {
+public class Ex0102 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         float raio, resultado, pi;
