@@ -28,5 +28,6 @@ public class Ex0404 {
         cliente.deposito(1234.56);
         cliente.saque(1234.56);
         System.out.println(cliente.toString());
+        sc.close();
     }
 }
