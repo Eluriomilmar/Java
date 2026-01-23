@@ -1,14 +1,17 @@
 import java.util.Scanner;
-import parafernalhas.parateste;
 
 public class teste {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        double raio = sc.nextDouble();
+        int qtd = sc.nextInt();
+        float total = 0;
+        double[] vetor = new double[qtd];
+        for(int i = 0; i < qtd ; i++){
+            vetor[i] = sc.nextFloat();
+            total += vetor[i];
+        }
 
-        System.out.printf("Circunferência: %.2f%n" +
-                "Volume: %.2f%n" +
-                "Pi: %.2f", parateste.circumference(raio), parateste.volume(raio), parateste.PI);
+        System.out.printf("A média é igual a: %.2f", total/qtd);
 
         sc.close();
     }
