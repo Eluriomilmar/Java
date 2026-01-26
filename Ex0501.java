@@ -4,7 +4,6 @@ Em seguida, mostre na tela todos os números negativos lidos.
  */
 
 import java.util.Scanner;
-import java.util.Vector;
 
 public class Ex0501 {
     public static void main(String[] args){
@@ -34,6 +33,8 @@ public class Ex0501 {
         if (nenhum == true){
             System.out.print("Nenhum.");
         }
+
+        sc.close();
 
     }
 }
