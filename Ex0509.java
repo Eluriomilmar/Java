@@ -33,8 +33,6 @@ public class Ex0509 {
 
         System.out.printf("A pessoa mais velha é: %s, que possui %d anos.", nomes[indice_mais_velha], idades[indice_mais_velha]);
 
-
-
         sc.close();
     }
 }
