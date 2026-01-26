@@ -41,5 +41,6 @@ public class Ex0504 {
         }
 
         System.out.printf("%nQuantidade de pares: %d", pares.length);
+        sc.close();
     }
 }

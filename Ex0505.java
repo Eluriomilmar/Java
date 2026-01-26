@@ -32,5 +32,6 @@ public class Ex0505 {
             }
         }
         System.out.printf("%nMaior valor: %.2f\nPosição do maior valor: %d", maior, pos_maior);
+        sc.close();
     }
 }
