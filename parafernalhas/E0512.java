@@ -24,4 +24,9 @@ public class E0512 {
     public void setEmail(String email) {
         this.email = email;
     }
+
+    @Override
+    public String toString() {
+        return "Nome: " + nome + "Email: " + email;
+    }
 }

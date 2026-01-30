@@ -30,7 +30,7 @@ public class Ex0512 {
 
         for (int i = 0; i < quartos.length ; i++) {
             if (quartos[i] != null) {
-                System.out.printf("Quarto %d: %s, %s%n", i, quartos[i].getNome(), quartos[i].getEmail());
+                System.out.printf("Quarto %d: %s%n", i, quartos[i].toString());
             }
         }
     }
