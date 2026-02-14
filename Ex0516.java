@@ -1,10 +1,8 @@
 import java.util.ArrayList;
-import java.util.Scanner;
-import parafernalhas.Produtos;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class teste {
+public class Ex0516 {
     public static void main(String[] args){
         String[] vetor = new String[] {"Maria", "Bob", "Marley"};
 
