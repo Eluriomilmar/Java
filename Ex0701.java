@@ -19,7 +19,7 @@ public class Ex0701 {
         Scanner sc = new Scanner(System.in);
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
-        System.out.printf("Entre com o nome do deprtamento: ");
+        System.out.printf("Entre com o nome do departamento: ");
         String nomeDepartamento = sc.nextLine();
         System.out.printf("Entre com o nome do trabalhador: ");
         String nomeTrabalhador = sc.nextLine();
