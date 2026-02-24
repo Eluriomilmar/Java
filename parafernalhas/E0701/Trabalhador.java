@@ -10,16 +10,17 @@ public class Trabalhador {
     private Double salarioBase;
 
     private Departamento departamento;
-    private List<ContratoHora> contratos = new ArrayList<>;
+    private List<ContratoHora> contratos = new ArrayList<>();
 
     public Trabalhador() {
 
     }
 
-    public Trabalhador(String nome, NivelTrabalhador nivel, Double salarioBase) {
+    public Trabalhador(String nome, NivelTrabalhador nivel, Double salarioBase, Departamento departamento) {
         this.nome = nome;
         this.nivel = nivel;
         this.salarioBase = salarioBase;
+        this.departamento = departamento;
     }
 
     public String getNome() {
@@ -77,7 +78,6 @@ public class Trabalhador {
                 soma += c.valorTotal();
             }
         }
+        return soma;
     }
-
-
 }

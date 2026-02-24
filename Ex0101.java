@@ -7,7 +7,6 @@ public class Ex0101 {
         Scanner sc = new Scanner(System.in);
 
         float x, y;
-
         x = sc.nextFloat();
         y = sc.nextFloat();
 
