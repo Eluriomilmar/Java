@@ -10,7 +10,7 @@ atualizada dos funcionários.
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
-import parafernalhas.E0513;
+import parafernalhas.antes07.E0513;
 
 public class Ex0513 {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package parafernalhas;
+package parafernalhas.antes07;
 
 public class E0512 {
     private String nome;

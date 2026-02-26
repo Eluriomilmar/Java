@@ -1,4 +1,4 @@
-package parafernalhas;
+package parafernalhas.antes07;
 
 public class Produtos {
     private String nome;

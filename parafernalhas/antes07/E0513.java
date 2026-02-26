@@ -1,4 +1,4 @@
-package parafernalhas;
+package parafernalhas.antes07;
 
 public class E0513 {
     private int id;

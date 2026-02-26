@@ -9,7 +9,7 @@ por ordem de quarto.
  */
 
 import java.util.Scanner;
-import parafernalhas.E0512;
+import parafernalhas.antes07.E0512;
 
 public class Ex0512 {
     public static void main(String[] args) {

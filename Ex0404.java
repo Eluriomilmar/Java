@@ -16,7 +16,7 @@ depósito inicial. Em seguida, realizar um depósto e depois um saque, sempre mo
  */
 
 import java.util.Scanner;
-import parafernalhas.ContaBanco;
+import parafernalhas.antes07.ContaBanco;
 
 public class Ex0404 {
     public static void main(String[] args){

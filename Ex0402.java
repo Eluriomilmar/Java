@@ -5,7 +5,7 @@ Em seguida, aumentar o salário do funcionário com base em uma porcentagem dada
 Mostrar novamente os dados do funcionário.
  */
 
-import parafernalhas.Empregado;
+import parafernalhas.antes07.Empregado;
 import java.util.Scanner;
 
 public class Ex0402 {

@@ -5,7 +5,7 @@ quantos pontos faltam para o aluno obter o mínimo para ser aprovado(60%).
  */
 
 import java.util.Scanner;
-import parafernalhas.Estudante;
+import parafernalhas.antes07.Estudante;
 
 public class Ex0403 {
     public static void main(String[] args){
