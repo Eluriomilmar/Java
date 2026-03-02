@@ -1,11 +1,7 @@
 package parafernalhas.E0703;
 
-import parafernalhas.E0701.ContratoHora;
-import parafernalhas.E0702.Comentario;
-
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 
@@ -19,7 +15,6 @@ public class Pedido {
     SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
     public Pedido() {
-
 
     }
 
@@ -58,7 +53,7 @@ public class Pedido {
         sb.append("Status do pedido: ");
         sb.append(statusPedido + "\n");
         sb.append("Pedidos: ");
-        for (int i = 0 ; i < pedidos.size() ; i++) {
+        for (int i = 0; i < pedidos.size(); i++) {
             sb.append(pedidos.get(i));
             sb.append(" ");
         }

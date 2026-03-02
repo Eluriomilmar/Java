@@ -2,8 +2,6 @@ import parafernalhas.E0703.Pedido;
 import parafernalhas.E0703.PedidoItem;
 import parafernalhas.E0703.Produto;
 import parafernalhas.E0703.StatusPedido;
-
-import javax.xml.crypto.Data;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
@@ -20,7 +18,6 @@ public class Ex0703 {
         PedidoItem item = new PedidoItem(2, produto);
         pedido.adicionaItem(item);
         System.out.println(pedido);
-
 
     }
 }

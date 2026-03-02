@@ -4,7 +4,6 @@ import java.time.Instant;
 import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 
-
 public class Ex0601 {
 
     public static void main(String[] args) {
@@ -24,9 +23,6 @@ public class Ex0601 {
         LocalDate d8 = LocalDate.of(2026, 2, 2);
 
         LocalDateTime d9 = LocalDateTime.of(2026, 2, 2, 17, 49);
-
-
-
 
         System.out.println(d1);
         System.out.println(d2);

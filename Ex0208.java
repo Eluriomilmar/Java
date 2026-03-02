@@ -13,21 +13,22 @@ acima de 4500.00                28% */
 import java.util.Scanner;
 
 public class Ex0208 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         double renda, resultado;
         renda = sc.nextDouble();
-        if (renda > 4500.00){
+        if (renda > 4500.00) {
             resultado = (renda - 4500) * 0.28 + (4500.00 - 3000.01) * 0.18 + (3000.00 - 2000.01) * 0.08;
             System.out.printf("R$%.2f", resultado);
-        }else if (renda > 3000){
+        } else if (renda > 3000) {
             resultado = (renda - 3000) * 0.18 + (3000.00 - 2000.01) * 0.08;
             System.out.printf("R$%.2f", resultado);
-        }else if (renda > 2000){
+        } else if (renda > 2000) {
             resultado = (renda - 2000) * 0.08;
             System.out.printf("R$%.2f", resultado);
-        }else{
+        } else {
             System.out.println("Isento");
         }
+        sc.close();
     }
 }

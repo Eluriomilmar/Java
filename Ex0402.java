@@ -9,7 +9,7 @@ import parafernalhas.antes07.Empregado;
 import java.util.Scanner;
 
 public class Ex0402 {
-    public static void main(String[] args){
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Empregado emp01 = new Empregado();
         System.out.printf("Nome: ");
@@ -22,7 +22,7 @@ public class Ex0402 {
         System.out.printf("Aumentar o salário em quantos porcento: ");
         double porcento = sc.nextDouble();
         emp01.AumentaSalario(porcento);
-
+        sc.close();
 
     }
 }
