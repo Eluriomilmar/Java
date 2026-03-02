@@ -19,8 +19,7 @@ public class Ex0513 {
         int qtd = sc.nextInt();
         List<E0513> lista = new ArrayList<>();
 
-
-        for (int i = 0 ; i < qtd ; i++) {
+        for (int i = 0; i < qtd; i++) {
             System.out.printf("Insira o nome e salário do funcionário, seu id será %d.%n", i);
             sc.nextLine();
             System.out.printf("Nome: ");
@@ -36,7 +35,6 @@ public class Ex0513 {
         System.out.printf("Insira o percentual do aumento do usuário: ");
         double aumento = sc.nextDouble();
 
-
         for (E0513 emp : lista) {
             System.out.println(emp);
             if (emp.getId() == id_aumento) {
@@ -46,7 +44,7 @@ public class Ex0513 {
         for (E0513 emp : lista) {
             System.out.println(emp.toString());
         }
-
+        sc.close();
 
     }
 }

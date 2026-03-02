@@ -17,7 +17,7 @@ public class Ex0512 {
         System.out.printf("Insira quantidade de quartos que serão alugados: ");
         int qtd = sc.nextInt();
         E0512[] quartos = new E0512[10];
-        for (int i = 0 ; i < qtd ; i++ ) {
+        for (int i = 0; i < qtd; i++) {
             sc.nextLine();
             System.out.printf("%dº aluguel:%nNome:", i + 1);
             String nome = sc.nextLine();
@@ -28,10 +28,11 @@ public class Ex0512 {
             quartos[quarto] = new E0512(nome, email);
         }
 
-        for (int i = 0; i < quartos.length ; i++) {
+        for (int i = 0; i < quartos.length; i++) {
             if (quartos[i] != null) {
                 System.out.printf("Quarto %d: %s%n", i, quartos[i].toString());
             }
         }
+        sc.close();
     }
 }
