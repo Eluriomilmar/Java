@@ -4,7 +4,6 @@ import parafernalhas.E0704.Order;
 import parafernalhas.E0704.OrderItem;
 import parafernalhas.E0704.Product;
 
-import java.sql.SQLOutput;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
