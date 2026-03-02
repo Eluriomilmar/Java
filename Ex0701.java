@@ -1,3 +1,4 @@
+
 /*
 Ler os dados de um trabalhador com N contratos (N fornecido pelo usuário). Depois, solicitar do usuário um mês e mostrar
 qual foi o salário do funcionário nesse mês.
@@ -28,7 +29,8 @@ public class Ex0701 {
         System.out.printf("Entre com o salário base do trabalhador: ");
         Double salarioBase = sc.nextDouble();
 
-        Trabalhador trabalhador = new Trabalhador(nomeTrabalhador, NivelTrabalhador.valueOf(nivelTrabalhador), salarioBase, new Departamento(nomeDepartamento));
+        Trabalhador trabalhador = new Trabalhador(nomeTrabalhador, NivelTrabalhador.valueOf(nivelTrabalhador),
+                salarioBase, new Departamento(nomeDepartamento));
 
         System.out.printf("Insira quantos contratos o trabalhador possui: ");
         int n = sc.nextInt();
@@ -47,11 +49,10 @@ public class Ex0701 {
 
         System.out.printf("%nEntre com o mês e ano para calcular o salário (MM/YYYY): ");
         String anoEMes = sc.next();
-        int mes = Integer.parseInt(anoEMes.substring(0,2));
+        int mes = Integer.parseInt(anoEMes.substring(0, 2));
         int ano = Integer.parseInt(anoEMes.substring(3));
         System.out.printf("Nome: %s%nDepartamento: %s%nReceita para %d/%d: %.2f", trabalhador.getNome(),
                 trabalhador.getDepartamento().getNome(), mes, ano, trabalhador.receita(ano, mes));
-
 
         sc.close();
     }

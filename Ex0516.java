@@ -3,8 +3,8 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class Ex0516 {
-    public static void main(String[] args){
-        String[] vetor = new String[] {"Maria", "Bob", "Marley"};
+    public static void main(String[] args) {
+        String[] vetor = new String[] { "Maria", "Bob", "Marley" };
 
         for (String x : vetor) {
             System.out.println(x);
@@ -26,7 +26,7 @@ public class Ex0516 {
 
         System.out.println("---------------------------");
         list.removeIf(x -> x.charAt(0) == 'M');
-        for(String x : list) {
+        for (String x : list) {
             System.out.println(x);
         }
 
@@ -39,7 +39,7 @@ public class Ex0516 {
             System.out.println(x);
         }
         System.out.println("---------------------------");
-        String name = list.stream().filter(x -> x.charAt(0) =='J').findFirst().orElse(null);
+        String name = list.stream().filter(x -> x.charAt(0) == 'J').findFirst().orElse(null);
         System.out.println(name);
     }
 }

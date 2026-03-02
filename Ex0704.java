@@ -3,8 +3,6 @@ import parafernalhas.E0704.Enums.OrderStatus;
 import parafernalhas.E0704.Order;
 import parafernalhas.E0704.OrderItem;
 import parafernalhas.E0704.Product;
-
-import java.sql.SQLOutput;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -36,8 +34,8 @@ public class Ex0704 {
 
         System.out.print("How many items to this order? ");
         int N = sc.nextInt();
-        for (int i = 0 ; i < N ; i++) {
-            System.out.println("Enter #" + (i+1) + " item data:");
+        for (int i = 0; i < N; i++) {
+            System.out.println("Enter #" + (i + 1) + " item data:");
             System.out.print("Product name: ");
             sc.next();
             String productName = sc.nextLine();

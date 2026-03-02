@@ -24,7 +24,6 @@ public class Ex0702 {
         p2.addComentario(c3);
         p2.addComentario(c4);
 
-
         System.out.println(p1);
         System.out.println(p2);
     }
