@@ -51,5 +51,4 @@ public class Ex0801 {
         }
         sc.close();
     }
-
 }

@@ -43,4 +43,5 @@ public class Employee {
     public Double payment() {
         return getHours() * getValuePerHour();
     }
+
 }
