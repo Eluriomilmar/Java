@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Ex0514 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.printf("Insira o tamanho da matriz: ");
+        System.out.print("Insira o tamanho da matriz: ");
         int tam = sc.nextInt();
         int[][] matriz = new int[tam][tam];
         for (int i = 0; i < matriz.length; i++) {
@@ -18,7 +18,7 @@ public class Ex0514 {
             }
         }
         int negativos = 0;
-        System.out.printf("Diagonal principal: ");
+        System.out.print("Diagonal principal: ");
         for (int i = 0; i < tam; i++) {
             for (int j = 0; j < tam; j++) {
                 if (matriz[i][j] < 0) {

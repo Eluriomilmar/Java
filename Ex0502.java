@@ -7,14 +7,15 @@ import java.util.Scanner;
 
 public class Ex0502 {
     public static void main(String[] args) {
-        System.out.printf("Insira quantidade de números a serem contidos no vetor: ");
+        System.out.print("Insira quantidade de números a serem contidos no vetor: ");
         Scanner sc = new Scanner(System.in);
         double media = 0;
         double soma = 0;
         int qtd = sc.nextInt();
         while (qtd < 1) {
             System.out.printf("Quantidade de números deve ser superior a 0.%n");
-            System.out.printf("Insira quantidade de números a serem contidos no vetor: ");
+            System.out.print("Insira quantidade de números a serem contidos no vetor: ");
+            qtd = sc.nextInt();
         }
         double[] vetor = new double[qtd];
         for (int i = 0; i < vetor.length ; i++) {
@@ -25,7 +26,7 @@ public class Ex0502 {
         }
         media = soma/media;
 
-        System.out.printf("Valores: ");
+        System.out.print("Valores: ");
         for (int i = 0; i < vetor.length ; i++){
             System.out.printf("%.2f ", vetor[i]);
         }

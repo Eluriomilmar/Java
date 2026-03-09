@@ -20,32 +20,31 @@ public class Ex0801 {
 
         Scanner sc = new Scanner(System.in);
 
-        List<Employee> lista = new ArrayList<Employee>();
+        List<Employee> lista = new ArrayList<>();
 
-        System.out.printf("Enter the number of employees: ");
+        System.out.print("Enter the number of employees: ");
         int numEmp = sc.nextInt();
 
         for (int i = 0; i < numEmp; i++) {
             System.out.println("Employee #" + (i+1) + " data:");
-            System.out.printf("Outsourced (Y/N): ");
+            System.out.print("Outsourced (Y/N): ");
             sc.nextLine();
             String outS = sc.nextLine();
-            System.out.printf("Name: ");
+            System.out.print("Name: ");
             String name = sc.nextLine();
-            System.out.printf("Hours: ");
+            System.out.print("Hours: ");
             int hours = sc.nextInt();
-            System.out.printf("Value per hour: ");
+            System.out.print("Value per hour: ");
             double valPerHour = sc.nextDouble();
             if (outS.equalsIgnoreCase("Y")) {
-                System.out.printf("Additional charge: ");
+                System.out.print("Additional charge: ");
                 double addCharge = sc.nextDouble();
                 lista.add(new OutsourcedEmployee(name, hours, valPerHour, addCharge));
             } else {
                 lista.add(new Employee(name, hours, valPerHour));
             }
         }
-        System.out.println("");
-        System.out.println("PAYMENTS: ");
+        System.out.printf("%nPAYMENTS: ");
         for (Employee emp : lista) {
             System.out.println(emp.getName() + " -  $" + String.format("%.2f", emp.payment()));
         }

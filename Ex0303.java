@@ -23,8 +23,8 @@ public class Ex0303 {
                 gasolina += 1;
             }else if (produto == 3){
                 diesel += 1;
-            }else if (produto < 1 || produto > 4){
-                System.out.printf("Número inválido, insira número de 1 a 4: ");
+            }else {
+                System.out.print("Número inválido, insira número de 1 a 4: ");
             }
             produto = sc.nextInt();
         }

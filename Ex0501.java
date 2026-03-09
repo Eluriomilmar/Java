@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Ex0501 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.printf("Quantos números você vai digitar? ");
+        System.out.print("Quantos números você vai digitar? ");
         int qtd = sc.nextInt();
         while (qtd < 1 || qtd > 10){
             System.out.printf("São aceitas somente quantidades de 1 a 10.%n" +
@@ -17,11 +17,11 @@ public class Ex0501 {
         }
         double[] vetor = new double[qtd];
         for (int i = 0 ; i < vetor.length ; i++){
-            System.out.printf("Insira número: ");
+            System.out.print("Insira número: ");
             vetor[i] = sc.nextFloat();
         }
 
-        System.out.printf("Números ímpares: ");
+        System.out.print("Números ímpares: ");
         boolean nenhum = true;
         for (int i = 0; i < vetor.length ; i++){
             if (vetor[i] < 0){
@@ -30,7 +30,7 @@ public class Ex0501 {
             }
         }
 
-        if (nenhum == true){
+        if (nenhum){
             System.out.print("Nenhum.");
         }
 

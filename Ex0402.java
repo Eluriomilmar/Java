@@ -12,14 +12,14 @@ public class Ex0402 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Empregado emp01 = new Empregado();
-        System.out.printf("Nome: ");
+        System.out.print("Nome: ");
         emp01.nome = sc.nextLine();
-        System.out.printf("Salário bruto: ");
+        System.out.print("Salário bruto: ");
         emp01.SalarioBruto = sc.nextDouble();
-        System.out.printf("Impostos: ");
+        System.out.print("Impostos: ");
         emp01.imposto = sc.nextDouble();
         System.out.printf("Empregado: %s, Salário líquido: %.2f%n", emp01.nome, emp01.SalarioLiquido());
-        System.out.printf("Aumentar o salário em quantos porcento: ");
+        System.out.print("Aumentar o salário em quantos porcento: ");
         double porcento = sc.nextDouble();
         emp01.AumentaSalario(porcento);
         sc.close();

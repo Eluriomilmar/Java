@@ -15,32 +15,22 @@ public class Ex0205 {
         Scanner sc = new Scanner(System.in);
         int item, quantidade;
         double resultado;
-        System.out.printf("Insira o número do item: ");
+        System.out.print("Insira o número do item: ");
         item = sc.nextInt();
-        System.out.printf("Insira a quantidade do item: ");
+        System.out.print("Insira a quantidade do item: ");
         quantidade = sc.nextInt();
         sc.close();
-        switch (item) {
-            case 1:
-                resultado = quantidade * 4.00;
-                break;
-            case 2:
-                resultado = quantidade * 4.50;
-                break;
-            case 3:
-                resultado = quantidade * 5.00;
-                break;
-            case 4:
-                resultado = quantidade * 2.00;
-                break;
-            case 5:
-                resultado = quantidade * 1.50;
-                break;
-            default:
+        resultado = switch (item) {
+            case 1 -> quantidade * 4.00;
+            case 2 -> quantidade * 4.50;
+            case 3 -> quantidade * 5.00;
+            case 4 -> quantidade * 2.00;
+            case 5 -> quantidade * 1.50;
+            default -> {
                 System.out.println("Valor inválido");
-                resultado = 0;
-                break;
-        }
+                yield 0;
+            }
+        };
         System.out.printf("O total é de: R$%.2f", resultado);
 
 

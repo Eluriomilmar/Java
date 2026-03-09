@@ -14,16 +14,16 @@ import parafernalhas.antes07.E0512;
 public class Ex0512 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.printf("Insira quantidade de quartos que serão alugados: ");
+        System.out.print("Insira quantidade de quartos que serão alugados: ");
         int qtd = sc.nextInt();
         E0512[] quartos = new E0512[10];
         for (int i = 0; i < qtd; i++) {
             sc.nextLine();
             System.out.printf("%dº aluguel:%nNome:", i + 1);
             String nome = sc.nextLine();
-            System.out.printf("Email: ");
+            System.out.print("Email: ");
             String email = sc.nextLine();
-            System.out.printf("Número do quarto: ");
+            System.out.print("Número do quarto: ");
             int quarto = sc.nextInt();
             quartos[quarto] = new E0512(nome, email);
         }

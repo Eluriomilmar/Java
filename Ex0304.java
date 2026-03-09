@@ -8,7 +8,7 @@ public class Ex0304 {
         Scanner sc = new Scanner(System.in);
         int numero = -1;
         while (numero < 1 || numero > 1000){
-            System.out.printf("Insira número de 1 a 1000: ");
+            System.out.print("Insira número de 1 a 1000: ");
             numero = sc.nextInt();
         }
         for(int i = 1; i <= numero; i++){

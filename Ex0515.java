@@ -9,9 +9,9 @@ import java.util.Scanner;
 public class Ex0515 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.printf("Insira número de linhas: ");
+        System.out.print("Insira número de linhas: ");
         int linhas = sc.nextInt();
-        System.out.printf("Insira número de colunas: ");
+        System.out.print("Insira número de colunas: ");
         int colunas = sc.nextInt();
         int[][] matriz = new int[linhas][colunas];
         for (int i = 0; i < linhas; i++) {
@@ -20,7 +20,7 @@ public class Ex0515 {
                 matriz[i][j] = sc.nextInt();
             }
         }
-        System.out.printf("Insira número para exibir aqueles em seu entorno: ");
+        System.out.print("Insira número para exibir aqueles em seu entorno: ");
         int entorno = sc.nextInt();
 
         for (int i = 0; i < matriz.length; i++) {

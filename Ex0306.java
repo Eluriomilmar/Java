@@ -10,15 +10,15 @@ public class Ex0306 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int n;
-        System.out.printf("Insira a quantidade de casos teste: ");
+        System.out.print("Insira a quantidade de casos teste: ");
         n = sc.nextInt();
         for (int i = 0; i < n; i++){
             double a, b, c;
-            System.out.printf("Insira o primeiro número: ");
+            System.out.print("Insira o primeiro número: ");
             a = sc.nextDouble();
-            System.out.printf("Insira o segundo número: ");
+            System.out.print("Insira o segundo número: ");
             b = sc.nextDouble();
-            System.out.printf("Insira o terceiro número: ");
+            System.out.print("Insira o terceiro número: ");
             c = sc.nextDouble();
             System.out.printf("A média do caso é igual a: %.2f%n", (a*2.0 + b*3.0 + c*5.0)/10);
         }

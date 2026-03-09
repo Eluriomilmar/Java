@@ -10,10 +10,10 @@ public class Ex0305{
         int qtd, num, dentro, fora;
         dentro = 0;
         fora = 0;
-        System.out.printf("Defina quantidade de números a serem inseridos: ");
+        System.out.print("Defina quantidade de números a serem inseridos: ");
         qtd = sc.nextInt();
         for (int x = 0; x < qtd; x++){
-            System.out.printf("Insira número: ");
+            System.out.print("Insira número: ");
             num = sc.nextInt();
             if (num >= 10 && num <= 20){
                 dentro += 1;

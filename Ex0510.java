@@ -10,7 +10,7 @@ public class Ex0510 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.printf("Insira quantidade de alunos: ");
+        System.out.print("Insira quantidade de alunos: ");
         int qtd = sc.nextInt();
         double[] nota1 = new double[qtd];
         double[] nota2 = new double[qtd];
@@ -18,12 +18,12 @@ public class Ex0510 {
 
         for (int i = 0 ; i < qtd ; i++) {
             System.out.printf("Digite o nome, primeira e segunda notas do %dº aluno%n", i + 1);
-            System.out.printf("Nome: ");
+            System.out.print("Nome: ");
             sc.nextLine();
             nome[i] = sc.nextLine();
-            System.out.printf("Primeira nota: ");
+            System.out.print("Primeira nota: ");
             nota1[i] = sc.nextDouble();
-            System.out.printf("Segunda nota: ");
+            System.out.print("Segunda nota: ");
             nota2[i] = sc.nextDouble();
             System.out.println();
         }

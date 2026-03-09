@@ -6,7 +6,7 @@ public class Ex0204 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int inicio, fim, total;
-        System.out.printf("Insira a hora de início: ");
+        System.out.print("Insira a hora de início: ");
         inicio = sc.nextInt();
         System.out.printf("%nInsira a hora do fim: ");
         fim = sc.nextInt();

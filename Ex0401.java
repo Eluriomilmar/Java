@@ -10,7 +10,7 @@ import java.lang.Math;
 public class Ex0401 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.printf("Insira o valor de x: ");
+        System.out.print("Insira o valor de x: ");
         double x = sc.nextDouble();
         System.out.print("Insira o valor de y: ");
         double y = sc.nextDouble();

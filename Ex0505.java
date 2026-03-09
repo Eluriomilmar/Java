@@ -10,10 +10,11 @@ public class Ex0505 {
         Scanner sc = new Scanner(System.in);
         double maior = 0;
         int pos_maior = 0;
-        System.out.printf("Quantidade de números que serão inseridos: ");
+        System.out.print("Quantidade de números que serão inseridos: ");
         int qtd = sc.nextInt();
         while (qtd < 1) {
-            System.out.printf("Insira número maior que 0: ");
+            System.out.print("Insira número maior que 0: ");
+            qtd = sc.nextInt();
         }
 
         double[] numeros = new double[qtd];

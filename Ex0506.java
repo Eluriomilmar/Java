@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Ex0506 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.printf("Insira quantidade de elementos que os vetores terão: ");
+        System.out.print("Insira quantidade de elementos que os vetores terão: ");
         int qtd = sc.nextInt();
         int[] A = new int[qtd];
         int[] B = new int[qtd];

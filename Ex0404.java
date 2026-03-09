@@ -27,7 +27,7 @@ public class Ex0404 {
         ContaBanco cliente = new ContaBanco(conta, titular, saldo);
         cliente.deposito(1234.56);
         cliente.saque(1234.56);
-        System.out.println(cliente.toString());
+        System.out.println(cliente);
         sc.close();
     }
 }

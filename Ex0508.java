@@ -9,7 +9,7 @@ public class Ex0508 {
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
-        System.out.printf("Insira quantidade de elementos do vetor: ");
+        System.out.print("Insira quantidade de elementos do vetor: ");
         int qtd = sc.nextInt();
         double pares = 0;
         double total = 0;
@@ -33,7 +33,7 @@ public class Ex0508 {
         if (total > 0) {
             System.out.printf("Média dos pares: %.2f", pares/total);
         } else {
-            System.out.printf("Nenhum número par inserido");
+            System.out.print("Nenhum número par inserido");
         }
         sc.close();
     }

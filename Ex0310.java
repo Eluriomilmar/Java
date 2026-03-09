@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Ex0310 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.printf("Insira número inteiro maior que 0: ");
+        System.out.print("Insira número inteiro maior que 0: ");
         int N = sc.nextInt();
         if (N > 0){
             for (int i = 1; i <= N; i++){

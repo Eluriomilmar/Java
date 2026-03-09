@@ -15,24 +15,24 @@ import parafernalhas.antes07.E0513;
 public class Ex0513 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.printf("Insira a quantidade de funcionários a serem inseridos: ");
+        System.out.print("Insira a quantidade de funcionários a serem inseridos: ");
         int qtd = sc.nextInt();
         List<E0513> lista = new ArrayList<>();
 
         for (int i = 0; i < qtd; i++) {
             System.out.printf("Insira o nome e salário do funcionário, seu id será %d.%n", i);
             sc.nextLine();
-            System.out.printf("Nome: ");
+            System.out.print("Nome: ");
             String nome = sc.nextLine();
-            System.out.printf("Salário: ");
+            System.out.print("Salário: ");
             double salario = sc.nextDouble();
             E0513 funcionario = new E0513(i, nome, salario);
             lista.add(funcionario);
         }
 
-        System.out.printf("Insira id do usuário a receber aumento: ");
+        System.out.print("Insira id do usuário a receber aumento: ");
         int id_aumento = sc.nextInt();
-        System.out.printf("Insira o percentual do aumento do usuário: ");
+        System.out.print("Insira o percentual do aumento do usuário: ");
         double aumento = sc.nextDouble();
 
         for (E0513 emp : lista) {

@@ -10,7 +10,7 @@ public class Ex0507 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.printf("Insira o tamanho do vetor: ");
+        System.out.print("Insira o tamanho do vetor: ");
 
         int qtd = sc.nextInt();
 
@@ -18,14 +18,14 @@ public class Ex0507 {
         double media = 0;
 
         for (int i = 0 ; i < vetor.length ; i++) {
-            System.out.printf("Insira número: ");
+            System.out.print("Insira número: ");
             vetor[i] = sc.nextDouble();
             media += vetor[i];
         }
         media = media/vetor.length;
 
         System.out.printf("Média do vetor: %.3f%n", media);
-        System.out.printf("Elementos abaixo da média: ");
+        System.out.print("Elementos abaixo da média: ");
 
         for (int i = 0 ; i < vetor.length ; i++) {
             if (vetor[i] < media) {

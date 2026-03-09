@@ -15,20 +15,20 @@ public class Ex0207 {
         y = sc.nextFloat();
         sc.close();
         if (x == 0 && y == 0){
-            System.out.printf("Origem");
+            System.out.print("Origem");
         }else if(y == 0){
-            System.out.printf("Eixo X");
+            System.out.print("Eixo X");
         }else if(x == 0){
-            System.out.printf("Eixo Y");
+            System.out.print("Eixo Y");
         }else{
             if (x > 0 && y > 0){
-                System.out.printf("Q1");
+                System.out.print("Q1");
             }else if (x < 0 && y > 0){
-                System.out.printf("Q2");
+                System.out.print("Q2");
             }else if (x < 0 && y < 0){
-                System.out.printf("Q3");
+                System.out.print("Q3");
             }else{
-                System.out.printf("Q4");
+                System.out.print("Q4");
             }
         }
     }

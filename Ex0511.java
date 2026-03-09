@@ -9,7 +9,7 @@ public class Ex0511 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.printf("Insira quantidade de pessoas a serem registradas: ");
+        System.out.print("Insira quantidade de pessoas a serem registradas: ");
         int qtd = sc.nextInt();
         double[] alturas = new double[qtd];
         char[] generos = new char[qtd];

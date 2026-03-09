@@ -7,13 +7,13 @@ public class Ex0307 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int quantidade;
-        System.out.printf("Insira quantidade de divisões: ");
+        System.out.print("Insira quantidade de divisões: ");
         quantidade = sc.nextInt();
         while (quantidade > 0){
             double a, b;
-            System.out.printf("Insira o numerador: ");
+            System.out.print("Insira o numerador: ");
             a = sc.nextDouble();
-            System.out.printf("Insira o denominador: ");
+            System.out.print("Insira o denominador: ");
             b = sc.nextDouble();
             if (b != 0){
                 System.out.printf("Resultado: %.2f%n", (a/b));

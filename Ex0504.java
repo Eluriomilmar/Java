@@ -8,7 +8,7 @@ import java.util.Scanner;
 public class Ex0504 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.printf("Quantidade de números a serem digitados: ");
+        System.out.print("Quantidade de números a serem digitados: ");
         int qtd = sc.nextInt();
         int cont_pares = 0;
         int[] inteiros = new int[qtd];

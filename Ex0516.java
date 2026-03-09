@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 public class Ex0516 {
     public static void main(String[] args) {
@@ -34,7 +33,7 @@ public class Ex0516 {
         System.out.println("Index of Bob: " + list.indexOf("Bob"));
         System.out.println("Index of marco: " + list.indexOf("Marco"));
         System.out.println("---------------------------");
-        List<String> result = list.stream().filter(x -> x.charAt(0) == 'A').collect(Collectors.toList());
+        List<String> result = list.stream().filter(x -> x.charAt(0) == 'A').toList();
         for (String x : result) {
             System.out.println(x);
         }

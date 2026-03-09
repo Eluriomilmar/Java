@@ -7,14 +7,14 @@ import java.util.Scanner;
 public class Ex0503 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.printf("Insira quantidade de pessoas: ");
+        System.out.print("Insira quantidade de pessoas: ");
         int qtd = sc.nextInt();
         int j = 0;
 
         while (qtd < 1) {
             System.out.printf("Insira quantidade maior que zero. %n");
-            System.out.printf("");
-            System.out.printf("Insira quantidade de pessoas: ");
+            System.out.print("");
+            System.out.print("Insira quantidade de pessoas: ");
             qtd = sc.nextInt();
         }
 
@@ -27,11 +27,11 @@ public class Ex0503 {
 
         for (int i = 0 ; i < idades.length ; i++) {
             System.out.printf("Insira os dados da %dª pessoa.%n", i+1);
-            System.out.printf("Nome: ");
+            System.out.print("Nome: ");
             nomes[i] = sc.next();
-            System.out.printf("Idade: ");
+            System.out.print("Idade: ");
             idades[i] = sc.nextInt();
-            System.out.printf("Altura: ");
+            System.out.print("Altura: ");
             alturas[i] = sc.nextDouble();
 
             if (idades[i] < 16) {

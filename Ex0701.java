@@ -20,28 +20,28 @@ public class Ex0701 {
         Scanner sc = new Scanner(System.in);
         SimpleDateFormat sdf = new SimpleDateFormat("dd/MM/yyyy");
 
-        System.out.printf("Entre com o nome do departamento: ");
+        System.out.print("Entre com o nome do departamento: ");
         String nomeDepartamento = sc.nextLine();
-        System.out.printf("Entre com o nome do trabalhador: ");
+        System.out.print("Entre com o nome do trabalhador: ");
         String nomeTrabalhador = sc.nextLine();
-        System.out.printf("Entre com o nível do trabalhador: ");
+        System.out.print("Entre com o nível do trabalhador: ");
         String nivelTrabalhador = sc.nextLine();
-        System.out.printf("Entre com o salário base do trabalhador: ");
+        System.out.print("Entre com o salário base do trabalhador: ");
         Double salarioBase = sc.nextDouble();
 
         Trabalhador trabalhador = new Trabalhador(nomeTrabalhador, NivelTrabalhador.valueOf(nivelTrabalhador),
                 salarioBase, new Departamento(nomeDepartamento));
 
-        System.out.printf("Insira quantos contratos o trabalhador possui: ");
+        System.out.print("Insira quantos contratos o trabalhador possui: ");
         int n = sc.nextInt();
 
         for (int i = 0; i < n; i++) {
             System.out.printf("Entre com os dados contrato de número %d.%n", i + 1);
-            System.out.printf("Entre com a data (DD/MM/YYYY): ");
+            System.out.print("Entre com a data (DD/MM/YYYY): ");
             Date data = sdf.parse(sc.next());
-            System.out.printf("Insira o valor por hora do contrato: ");
+            System.out.print("Insira o valor por hora do contrato: ");
             double valorPorHora = sc.nextDouble();
-            System.out.printf("Insira a duração do contrato em horas: ");
+            System.out.print("Insira a duração do contrato em horas: ");
             int horas = sc.nextInt();
             ContratoHora contrato = new ContratoHora(data, valorPorHora, horas);
             trabalhador.adicionaContrato(contrato);

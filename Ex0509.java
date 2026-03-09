@@ -9,7 +9,7 @@ public class Ex0509 {
     public static void main (String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        System.out.printf("Insira quantidade de pessoas a serem registradas: ");
+        System.out.print("Insira quantidade de pessoas a serem registradas: ");
         int qtd = sc.nextInt();
         String[] nomes = new String[qtd];
         int[] idades = new int[qtd];
@@ -18,9 +18,9 @@ public class Ex0509 {
 
         for (int i = 0 ; i < qtd ; i++) {
             System.out.printf("Insira os dados da %dª pessoa%n", i + 1);
-            System.out.printf("Nome: ");
+            System.out.print("Nome: ");
             nomes[i] = sc.next();
-            System.out.printf("Idade: ");
+            System.out.print("Idade: ");
             idades[i] = sc.nextInt();
             if (i == 0) {
                 indice_mais_velha = 0;

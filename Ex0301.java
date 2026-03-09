@@ -8,10 +8,10 @@ public class Ex0301 {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         int senha;
-        System.out.printf("Insira senha: ");
+        System.out.print("Insira senha: ");
         senha = sc.nextInt();
         while(senha != 2002){
-            System.out.printf("Senha inválida, insira senha correta: ");
+            System.out.print("Senha inválida, insira senha correta: ");
             senha = sc.nextInt();
         }
         System.out.println("Senha correta inserida, finalizando programa.");

@@ -11,13 +11,13 @@ public class Ex0403 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         Estudante es = new Estudante();
-        System.out.printf("Insira o nome do estudante: ");
+        System.out.print("Insira o nome do estudante: ");
         es.nome = sc.nextLine();
-        System.out.printf("Insira a nota do primeiro trimestre: ");
+        System.out.print("Insira a nota do primeiro trimestre: ");
         es.nota1 = sc.nextFloat();
-        System.out.printf("Insira a nota do segundo trimestre: ");
+        System.out.print("Insira a nota do segundo trimestre: ");
         es.nota2 = sc.nextFloat();
-        System.out.printf("Insira a nota do terceiro trimestre: ");
+        System.out.print("Insira a nota do terceiro trimestre: ");
         es.nota3 = sc.nextFloat();
         System.out.printf("A nota final foi igual a: %.2f%n", es.total());
         if (es.total() < 60) {
