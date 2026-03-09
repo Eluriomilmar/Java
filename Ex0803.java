@@ -10,25 +10,25 @@ import java.util.Scanner;
 public class Ex0803 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.printf("Enter the number of shapes: ");
+        System.out.print("Enter the number of shapes: ");
         int n = sc.nextInt();
 
         List<Shape> list = new ArrayList<>();
 
         for (int i = 1; i <= n; i++) {
             System.out.println("Shape #" + i + " data:");
-            System.out.printf("Rectangle or Circle (R/C): ");
+            System.out.print("Rectangle or Circle (R/C): ");
             char ch = sc.next().toUpperCase().charAt(0);
-            System.out.printf("Color (Black/Blue/Red): ");
+            System.out.print("Color (Black/Blue/Red): ");
             Color color = Color.valueOf(sc.next().toUpperCase());
             if (ch == 'R') {
-                System.out.printf("Width: ");
+                System.out.print("Width: ");
                 double width = sc.nextDouble();
-                System.out.printf("Height: ");
+                System.out.print("Height: ");
                 double height = sc.nextDouble();
                 list.add(new Rectangle(color, width, height));
             } else {
-                System.out.printf("Radius: ");
+                System.out.print("Radius: ");
                 double radius = sc.nextDouble();
                 list.add(new Circle(color, radius));
             }
@@ -36,7 +36,7 @@ public class Ex0803 {
         System.out.println();
         System.out.println("Shape areas: ");
         for (Shape shape : list) {
-            System.out.println(String.format("%.2f", shape.area()));
+            System.out.printf("%.2f%n", shape.area());
         }
     }
 }
