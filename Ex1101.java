@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Ex1101 {
     public static void main(String[] args) {
+
         File file = new File("C:\\Users\\Lucas\\Desktop\\teste.txt");
         Scanner sc = null;
         try {
