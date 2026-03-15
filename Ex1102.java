@@ -1,23 +1,24 @@
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 
 public class Ex1102 {
     public static void main(String[] args) {
 
         String path = "C:\\Users\\Lucas\\Desktop\\teste.txt";
 
-        try (BufferedReader br = new BufferedReader(new FileReader(path))){
+        String[] lines = new String[] {
+                "Testing stuff",
+                "Idk what I'm doing",
+                "ayayay muchacho jajaja"
+        };
 
-            String line = br.readLine();
-
-            while (line != null) {
-                System.out.println(line);
-                line = br.readLine();
+        try (BufferedWriter bw = new BufferedWriter(new FileWriter(path, true))) {
+            for (String line : lines) {
+                bw.write(line);
+                bw.newLine();
             }
         }
         catch (IOException e) {
-            System.out.println("Error: " + e.getMessage());
+            e.printStackTrace();
         }
     }
 }
