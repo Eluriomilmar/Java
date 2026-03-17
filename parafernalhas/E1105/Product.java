@@ -1,17 +1,18 @@
-package parafernalhas.E0704;
+package parafernalhas.E1105;
 
 public class Product {
-
     private String name;
     private Double price;
+    private Integer quantity;
 
     public Product() {
 
     }
 
-    public Product(String name, Double price) {
+    public Product(String name, Double price, Integer quantity) {
         this.name = name;
         this.price = price;
+        this.quantity = quantity;
     }
 
     public String getName() {
@@ -30,4 +31,11 @@ public class Product {
         this.price = price;
     }
 
+    public Integer getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Integer quantity) {
+        this.quantity = quantity;
+    }
 }

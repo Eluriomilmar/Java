@@ -23,7 +23,7 @@ public class Ex1104 {
                 try (BufferedWriter bw = new BufferedWriter(new FileWriter(out, true))){
                     Float total = Float.parseFloat(parts[1]) * Float.parseFloat(parts[2]);
                     bw.write(parts[0] + ",");
-                    bw.write(String.valueOf(total));
+                    bw.write(String.format("%.2f", String.valueOf(total)));
                     bw.newLine();
                 }
                 catch (IOException e) {
