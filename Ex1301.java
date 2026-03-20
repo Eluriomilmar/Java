@@ -13,7 +13,6 @@ import parafernalhas.E1301.CarRental;
 import parafernalhas.E1301.RentalService;
 import parafernalhas.E1301.Vehicle;
 
-import java.text.ParseException;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Scanner;
